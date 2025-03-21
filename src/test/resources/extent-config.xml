@@ -1,0 +1,11 @@
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <documentTitle>Automation Test Report</documentTitle>
+        <reportName>My Project Regression Report</reportName>
+        <encoding>utf-8</encoding>
+        <protocol>https</protocol>
+        <enableTimeline>true</enableTimeline>
+        <protocol>https</protocol>
+    </configuration>
+</extentreports>

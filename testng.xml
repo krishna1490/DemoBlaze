@@ -1,9 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Regression Suite">
-    <test name="HomePage Tests">
+<suite name="Regression Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="org.krishnaIT.listeners.TestListener"/>
+    </listeners>
+
+    <test name="HomePage Tests - Chrome">
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="org.krishnaIT.tests.PalindromeTest"/>
-            <!-- Add other test classes here -->
+            <class name="org.krishnaIT.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="HomePage Tests - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="org.krishnaIT.HomePageTest"/>
         </classes>
     </test>
 </suite>

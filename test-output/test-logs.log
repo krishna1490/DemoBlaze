@@ -1,0 +1,40 @@
+2025-03-21 22:34:24 [TestNG-tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-21 22:34:24 [TestNG-tests-2] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.36.0-linux (resolved driver for Firefox 136)
+2025-03-21 22:34:24 [TestNG-tests-1] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\hp\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-21 22:34:24 [TestNG-tests-2] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2025-03-21 22:34:24 [TestNG-tests-2] WARN  io.github.bonigarcia.wdm.WebDriverManager - There was an error managing geckodriver 0.36.0-linux (No proper candidate URL to download geckodriver 0.36.0-linux) ... trying again using latest driver stored in cache
+2025-03-21 22:34:24 [TestNG-tests-2] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.36.0-linux (resolved driver for Firefox 136)
+2025-03-21 22:34:25 [TestNG-tests-2] INFO  io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2025-03-21 22:34:25 [TestNG-tests-2] ERROR io.github.bonigarcia.wdm.WebDriverManager - There was an error managing geckodriver 0.36.0-linux (No proper candidate URL to download geckodriver 0.36.0-linux)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: No proper candidate URL to download geckodriver 0.36.0-linux
+	at io.github.bonigarcia.wdm.online.UrlHandler.getCandidateUrl(UrlHandler.java:287) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1278) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1428) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195) ~[webdrivermanager-5.6.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427) ~[webdrivermanager-5.6.2.jar:?]
+	at org.krishnaIT.utils.WebDriverManagerUtil.initializeDriver(WebDriverManagerUtil.java:15) ~[classes/:?]
+	at org.krishnaIT.tests.BaseTest.setup(BaseTest.java:34) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.8.0.jar:7.8.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58) ~[testng-7.8.0.jar:7.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-03-21 22:34:40 [TestNG-tests-1] INFO  org.krishnaIT.HomePageTest - Verifying Home button is displayed...
+2025-03-21 22:34:41 [TestNG-tests-1] INFO  org.krishnaIT.HomePageTest - Verifying logo is displayed...
