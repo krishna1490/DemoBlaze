@@ -36,3 +36,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Custom ignored files ###
+src/main/java/org/krishnaIT/pages/PalindromeChecker.java
+src/main/java/org/krishnaIT/pages/CheckPalindrome.java
+src/main/java/org/krishnaIT/utils/DBUtils.java
+src/test/java/org/krishnaIT/tests/DBTest.java
+src/test/java/org/krishnaIT/tests/PalindromeTest.java
